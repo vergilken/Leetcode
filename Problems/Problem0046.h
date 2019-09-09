@@ -14,7 +14,7 @@ public:
     }
 
 private:
-    static void helper(vector<vector<int>>& permutations, vector<int>& nums, size_t begin) {
+    static void helper(vector<vector<int>>& permutations, vector<int> nums, size_t begin) {
         if (begin == nums.size() - 1) {
             permutations.push_back(nums);
             return;
