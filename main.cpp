@@ -1,7 +1,8 @@
 #include "solution.h"
 
 int main() {
-
-    auto obj = new LongestWellPerformingInterval();
+    vector<int> nums = {1, 2 ,3};
+    auto* obj = new Permutations();
+    Printer::print_matrix(obj -> permute(nums));
     return EXIT_SUCCESS;
 }

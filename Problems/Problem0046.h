@@ -22,6 +22,7 @@ private:
             for (size_t i = begin; i < nums.size(); ++i) {
                 swap(nums[i], nums[begin]);
                 helper(permutations, nums, begin+1);
+                //swap(nums[i], nums[begin]); no need to recover the elements at i and begin
             }
         }
     }
