@@ -15,14 +15,17 @@
 
 /** DFS **/
 // Permutation series
-#include "Problems/Problem0046.h"                // Permutations
+#include "Problems/Problem0046.h"                 // 46. Permutations
+
+// Backtracking
+#include "Problems/Problem1088.h"                 // 1088. Confusing Number II
 
 /** Union Find **/
-#include "Problems/Problem0200.h"                // 200. Number of Islands
-#include "Problems/Problem0305.h"                // 305. Number of Islands II
+#include "Problems/Problem0200.h"                 // 200. Number of Islands
+#include "Problems/Problem0305.h"                 // 305. Number of Islands II
 
 /** stack **/
-#include "Problems/Problem1124.h"                 // 1124. Longest Well-Performing Interval
+#include "Problems/Problem1124.h"                  // 1124. Longest Well-Performing Interval
 
 /** 1-dimension Dynamical Programming **/
 #include "Problems/Problem0304.h"
@@ -34,7 +37,7 @@
 #include "Problems/TODO_Problem0327.h"                 // 327. Count of Range Sum
 
 /** random pick **/
-#include "Problems/Problem1157.h"                 // 1157. Online Majority Element In Subarray
+#include "Problems/Problem1157.h"                  // 1157. Online Majority Element In Subarray
 
 #define ALGORITHMS_SOLUTION_H
 
