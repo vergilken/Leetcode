@@ -28,7 +28,8 @@
 #include "Problems/Problem1124.h"                  // 1124. Longest Well-Performing Interval
 
 /** 1-dimension Dynamical Programming **/
-#include "Problems/Problem0304.h"
+#include "Problems/Problem0304.h"                  // 304. Range Sum Query 2D - Immutable
+#include "Problems/Problem1186.h"                  // 1186. Maximum Subarray Sum with One Deletion
 
 /** Binary Indexed Tree **/
 #include "Problems/TODO_Problem0218.h"                 // 218. The Skyline Problem
