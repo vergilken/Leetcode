@@ -17,6 +17,9 @@
 // Permutation series
 #include "Problems/Problem0046.h"                 // 46. Permutations
 
+/** Graph Traverse **/
+#include "Problems/Problem1192.h"                 // 1192. Critical Connections in a Network
+
 // Backtracking
 #include "Problems/Problem1088.h"                 // 1088. Confusing Number II
 
