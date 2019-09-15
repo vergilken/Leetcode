@@ -29,7 +29,11 @@
 
 /** 1-dimension Dynamical Programming **/
 #include "Problems/Problem0304.h"                  // 304. Range Sum Query 2D - Immutable
+#include "Problems/Problem0801.h"                  // 801. Minimum Swaps To Make Sequences Increasing
 #include "Problems/Problem1186.h"                  // 1186. Maximum Subarray Sum with One Deletion
+
+/** 2-dimension Dynamical Programming **/
+#include "Problems/Problem1187.h"                  // 1187. Make Array Strictly Increasing
 
 /** Binary Indexed Tree **/
 #include "Problems/TODO_Problem0218.h"                 // 218. The Skyline Problem
