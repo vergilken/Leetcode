@@ -4,12 +4,12 @@
 
 #ifndef ALGORITHMS_INDIRECTED_GRAPH_H
 #define ALGORITHMS_INDIRECTED_GRAPH_H
+
 #define NIL -1
 class Graph {
 public:
     explicit  Graph(size_t _V): V(_V) {
         adj.resize(_V, vector<int>(0));
-
     }
     void add_edge(int v, int w) {
         adj[v].push_back(w);
