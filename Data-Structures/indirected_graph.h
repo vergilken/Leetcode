@@ -15,7 +15,7 @@ public:
         adj[v].push_back(w);
         adj[w].push_back(v);
     }
-    vector<pair<int, int>> get_bridges() {
+    vector<vector<int>> get_bridges() {
         vector<bool> visited(V, false);
         vector<int> disc(V, 0), low(V, 0), parent(V, NIL);
 
@@ -27,17 +27,14 @@ public:
         return bridges;
     }
 
-    vector<vector<int>> get_adj() {
-        return adj;
-    }
 private:
     int V;
     int curIndex = 0;
     vector<vector<int>> adj;
-    vector<pair<int, int>> bridges;
+    vector<vector<int>> bridges;
 
     void bridge_util(int index, vector<bool>& visited, vector<int>& disc,
-            vector<int>& low, vector<int>& parent) {
+                     vector<int>& low, vector<int>& parent) {
         visited[index] = true;
         disc[index] = low[index] = ++curIndex;
         for (auto i = adj[index].begin(); i != adj[index].end(); ++i) {
@@ -47,7 +44,7 @@ private:
                 bridge_util(endPoint, visited, disc, low, parent);
                 low[index] = min(low[index], low[endPoint]);
                 if (low[endPoint] > disc[index]) {
-                    bridges.emplace_back(index, endPoint);
+                    bridges.push_back(vector<int>{index, endPoint});
                 }
             } else if (endPoint != parent[index]) {
                 low[index] = min(low[index], disc[endPoint]);
