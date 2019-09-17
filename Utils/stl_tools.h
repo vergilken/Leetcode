@@ -5,6 +5,7 @@
 #ifndef ALGORITHMS_STL_TOOLS_H
 #define ALGORITHMS_STL_TOOLS_H
 
+#include <utility>
 #include <iostream>
 #include <climits>
 #include <algorithm>
