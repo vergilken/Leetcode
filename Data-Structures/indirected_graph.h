@@ -2,13 +2,14 @@
 // Created by vergilken on 9/16/19.
 //
 
-#ifndef ALGORITHMS_UNDIRECTED_GRAPH_H
-#define ALGORITHMS_UNDIRECTED_GRAPH_H
-
+#ifndef ALGORITHMS_INDIRECTED_GRAPH_H
+#define ALGORITHMS_INDIRECTED_GRAPH_H
+#define NIL -1
 class Graph {
 public:
-    Graph(size_t _V): V(_V) {
-        adj.resize(_V);
+    explicit  Graph(size_t _V): V(_V) {
+        adj.resize(_V, vector<int>(0));
+
     }
     void add_edge(int v, int w) {
         adj[v].push_back(w);
@@ -17,18 +18,19 @@ public:
     vector<pair<int, int>> get_bridges() {
         vector<bool> visited(V, false);
         vector<int> disc(V, 0), low(V, 0), parent(V, NIL);
-        /*
-        for (size_t i = 0; i < V; ++i) {
-            cout << "fuck" << endl;
-            if (!visited[i]) {
 
+        for (size_t i = 0; i < V; ++i) {
+            if (!visited[i]) {
                 bridge_util(i, visited, disc, low, parent);
             }
-        }*/
+        }
         return bridges;
     }
+
+    vector<vector<int>> get_adj() {
+        return adj;
+    }
 private:
-    constexpr static int NIL = -1;
     int V;
     int curIndex = 0;
     vector<vector<int>> adj;
@@ -53,4 +55,4 @@ private:
         }
     }
 };
-#endif //ALGORITHMS_UNDIRECTED_GRAPH_H
+#endif //ALGORITHMS_INDIRECTED_GRAPH_H

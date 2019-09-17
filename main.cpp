@@ -1,8 +1,8 @@
 #include "solution.h"
-#include "./Data-Structures/undirected_graph.h"
+#include "Data-Structures/indirected_graph.h"
 
 int main() {
-    Graph g1(5);
+    Graph g1(7);
     g1.add_edge(0, 1);
     g1.add_edge(1, 2);
     g1.add_edge(2, 0);
@@ -11,6 +11,11 @@ int main() {
     g1.add_edge(1, 6);
     g1.add_edge(3, 5);
     g1.add_edge(4, 5);
-    g1.get_bridges();
+
+    vector<pair<int, int>>result = g1.get_bridges();
+    for (auto temp: result) {
+        cout << temp.first << " " << temp.second << endl;
+    } cout << endl;
+
     return EXIT_SUCCESS;
 }
