@@ -1,11 +1,9 @@
 # Tarjan Algorithm with Directed Graph
 
 ## SCCS
-Strongly connected components is self-contained cycles within a directed graph where every vertex in a given  
+Strongly connected components is self-contained cycles within a directed graph where every vertex in a given cycle can reach every other vertex in the same cycle. 
 
-## Export a file
-
-You can export the current file by clicking **Export to disk** in the menu. You can choose to export the file as plain Markdown, as HTML using a Handlebars template or as a PDF.
+## 
 
 
 # Synchronization
@@ -21,5 +19,5 @@ There are two types of synchronization and they can complement each other:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0MjAzODY1Ml19
+eyJoaXN0b3J5IjpbLTE0NzYzNzg4NTFdfQ==
 -->
