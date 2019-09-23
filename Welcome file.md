@@ -24,8 +24,8 @@ c1-->c2
 c1-->c3
 c2-->c1
 c2-->c3
-c3-->a2
-a3-->a1
+c3-->c2
+c3-->c1
 end
 
 ```
@@ -43,6 +43,6 @@ There are two types of synchronization and they can complement each other:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTE0MTc4NTIsLTE0NzYzNzg4NTFdfQ
+eyJoaXN0b3J5IjpbLTE0OTg2MjE0OTgsLTE0NzYzNzg4NTFdfQ
 ==
 -->
