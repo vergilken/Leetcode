@@ -12,7 +12,7 @@
 **Strongly Connected Components** can be thought of self-connected cycles within a directed graph where every vertex in a given cycle can reach every other vertex in the same cycle.
   
 
-![](../assets/fd126763de1bc63208bac44979efdd8f0.png?0.900227123864358)  
+![](../assets/fd126763de1bc63208bac44979efdd8f0.png?0.004513725473391572)  
   
 ###  Low-link Values
   
@@ -20,17 +20,12 @@
 The low-link values of a node is the smallest node id reachable from that node when doing a DFS (including itself).
   
 
-![](../assets/fd126763de1bc63208bac44979efdd8f1.png?0.2368299419592963)  
+![](../assets/fd126763de1bc63208bac44979efdd8f1.png?0.924936541171933)  
   
 Low-link value for each node(start from node 0):
-|Node ID         |0 |1 |2 |3 |4 |5 |
-|----------------|--|--|--|--|--|--|
-|Low-link value  |0 |0 |0 |3 |4 |4 |
-  
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| Node ID         | 0  | 1  | 2  | 3  | 4  | 5  |
+| --------------- | -- | -- | -- | -- | -- | -- |
+| Low-link value  | 0  | 0  | 0  | 3  | 4  | 4  |
   
 >**Important**: Depending on where the DFS starts and which edges are visited the low-link values could be wrong. In the context of Tarjan's SCC algorithm, we maintain an invariant that prevents SCCs to interfere with each others' low-link values.
   

@@ -57,14 +57,9 @@ digraph H {
 ```
 
 Low-link value for each node(start from node 0):
-|Node ID         |0 |1 |2 |3 |4 |5 |
-|----------------|--|--|--|--|--|--|
-|Low-link value  |0 |0 |0 |3 |4 |4 |
-
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| Node ID         | 0  | 1  | 2  | 3  | 4  | 5  |
+| --------------- | -- | -- | -- | -- | -- | -- |
+| Low-link value  | 0  | 0  | 0  | 3  | 4  | 4  |
 
 >**Important**: Depending on where the DFS starts and which edges are visited the low-link values could be wrong. In the context of Tarjan's SCC algorithm, we maintain an invariant that prevents SCCs to interfere with each others' low-link values.
 
