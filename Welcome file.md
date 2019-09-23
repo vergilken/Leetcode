@@ -5,38 +5,20 @@ Strongly connected components is self-contained cycles within a directed graph w
 
 
 ```mermaid
-graph LR
-a1-->b1
-a3-->b1
-c1-->a1
-c1-->b2
-c3-->b2
-d1-->c2
-d1-->c3
-subgraph 
-a1((a1))-->a2((a2))
-a1-->a3((a3))
-a2-->a1
-a2-->a3
-a3-->a2
-a3-->a1
-end
-subgraph 
-b1((b1))-->b2((b2))
-b2-->b1
-end
-subgraph 
-c1((c1))-->c2((c2))
-c1-->c3((c3))
-c2-->c1
-c2-->c3
-c3-->c2
-c3-->c1
-end
-subgraph 
-d1-->d1((d1))
-end
-
+classDiagram
+Class01 <|-- AveryLongClass : Cool
+Class03 *-- Class04
+Class05 o-- Class06
+Class07 .. Class08
+Class09 --> C2 : Where am i?
+Class09 --* C3
+Class09 --|> Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+Class08 <--> C2: Cool label
 ```
 
 # Synchronization
@@ -52,6 +34,6 @@ There are two types of synchronization and they can complement each other:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjQyNDg3MDksLTE0NzYzNzg4NTFdfQ
-==
+eyJoaXN0b3J5IjpbLTE4ODE5NTEyNDUsLTEyMjQyNDg3MDksLT
+E0NzYzNzg4NTFdfQ==
 -->
