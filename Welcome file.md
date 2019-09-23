@@ -3,9 +3,12 @@
 ## SCCS
 Strongly connected components is self-contained cycles within a directed graph where every vertex in a given cycle can reach every other vertex in the same cycle. 
 
-``
-graph TB c1-->a2 subgraph one a1-->a2 end subgraph two b1-->b2 end subgraph three c1-->c2 end
 
+```mermaid
+graph LR
+c1-->a2 subgraph one a1-->a2 end subgraph two b1-->b2 end subgraph three c1-->c2
+
+```
 
 # Synchronization
 There are two types of synchronization and they can complement each other:
@@ -20,5 +23,6 @@ There are two types of synchronization and they can complement each other:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyMjQzODczMCwtMTQ3NjM3ODg1MV19
+eyJoaXN0b3J5IjpbLTE1NzgxMzQ5MDAsLTE0NzYzNzg4NTFdfQ
+==
 -->
