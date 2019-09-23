@@ -9,15 +9,23 @@ graph LR
 c1-->a2
 subgraph one
 a1-->a2
-a2-->a1
 a1-->a3
-a3-->
+a2-->a1
+a2-->a3
+a3-->a2
+a3-->a1
 end
 subgraph two
 b1-->b2
+b2-->b1
 end
 subgraph three
 c1-->c2
+c1-->c3
+c2-->c1
+c2-->c3
+c3-->a2
+a3-->a1
 end
 
 ```
@@ -35,5 +43,6 @@ There are two types of synchronization and they can complement each other:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzc3NTIxMCwtMTQ3NjM3ODg1MV19
+eyJoaXN0b3J5IjpbLTEzNTE0MTc4NTIsLTE0NzYzNzg4NTFdfQ
+==
 -->
