@@ -23,9 +23,6 @@ The low-link values of a node is the smallest node id reachable from that node w
 ![](../assets/fd126763de1bc63208bac44979efdd8f1.png?0.924936541171933)  
   
 Low-link value for each node(start from node 0):
-| Node ID         | 0  | 1  | 2  | 3  | 4  | 5  |
-| --------------- | -- | -- | -- | -- | -- | -- |
-| Low-link value  | 0  | 0  | 0  | 3  | 4  | 4  |
 
 | Node ID         | 0  | 1  | 2  | 3  | 4  | 5  |
 | -------------   | -- | -- | -- | -- | -- | -- |
