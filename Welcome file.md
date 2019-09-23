@@ -1,8 +1,7 @@
-## Tarjan Algorithm with Directed Graph
+# Tarjan Algorithm with Directed Graph
 
-
-### Finding Strongly Connected Components
-#### SCCS
+## SCCS
+Strongly connected components is self-contained cycles within a directed graph where every vertex in a given  
 
 ## Export a file
 
@@ -22,5 +21,5 @@ There are two types of synchronization and they can complement each other:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyNjM5NzU1XX0=
+eyJoaXN0b3J5IjpbLTU0MjAzODY1Ml19
 -->
