@@ -26,6 +26,7 @@ Low-link value for each node(start from node 0):
 | Node ID         | 0  | 1  | 2  | 3  | 4  | 5  |
 | --------------- | -- | -- | -- | -- | -- | -- |
 | Low-link value  | 0  | 0  | 0  | 3  | 4  | 4  |
+
 | First Header  | Second Header |
 | ------------- | ------------- |
 | Content Cell  | Content Cell  |
