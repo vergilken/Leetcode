@@ -5,9 +5,9 @@ Strongly connected components is self-contained cycles within a directed graph w
 
 
 ```mermaid
-graph LR
+graph RL
 
-subgraph one
+subgraph 
 a1((a1))-->a2((a2))
 a1-->a3((a3))
 a2-->a1
@@ -15,17 +15,20 @@ a2-->a3
 a3-->a2
 a3-->a1
 end
-subgraph two
-b1-->b2((b2))
+subgraph 
+b1((b1))-->b2((b2))
 b2-->b1
 end
-subgraph three
+subgraph 
 c1((c1))-->c2((c2))
 c1-->c3((c3))
 c2-->c1
 c2-->c3
 c3-->c2
 c3-->c1
+end
+subgraph 
+d1-->d1((d1))
 end
 
 ```
@@ -43,5 +46,5 @@ There are two types of synchronization and they can complement each other:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0MzM4Njk5OSwtMTQ3NjM3ODg1MV19
+eyJoaXN0b3J5IjpbMTczMDc5NDExNCwtMTQ3NjM3ODg1MV19
 -->
