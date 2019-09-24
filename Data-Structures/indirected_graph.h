@@ -8,7 +8,7 @@
 #define NIL -1
 class Graph {
 public:
-    explicit  Graph(size_t _V): V(_V) {
+    explicit Graph(size_t _V): V(_V) {
         adj.resize(_V, vector<int>(0));
     }
     void add_edge(int v, int w) {

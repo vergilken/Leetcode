@@ -62,11 +62,11 @@ Low-link value for each node(start from node 0):
 
 >**Important**: Depending on where the DFS starts and which edges are visited the low-link values could be wrong. In the context of Tarjan's SCC algorithm, we maintain an invariant that prevents SCCs to interfere with each others' low-link values.
 
-### The Stack Invariant
+## The Stack Invariant
 
 To cope with the random traversal order of the DFS, Tarjan's algorithm maintains a set (often as a stack) of valid nodes from which to update low-link values from. Nodes are added to the stack(set) of valid nodes as they are explored for the first time. Then nodes are removed from the stack(set) each time a complete SCC is found.  
 
-### New low-link update condition
+## New low-link update condition
 
 If u and v are nodes in a graph and we are currently exploring u then our new low-link update condition is that: to update node u's low-link value to node v's low-link value there has to be a path of edges from u to v and node v must be on the stack.
 

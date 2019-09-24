@@ -1,5 +1,5 @@
 #include "solution.h"
-#include "Data-Structures/indirected_graph.h"
+#include "Data-Structures/directed_graph.h"
 
 int main() {
 
