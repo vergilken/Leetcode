@@ -23,7 +23,7 @@ public:
              return;
          } else {
              for (size_t i = 0; i < matrix.size(); ++i) {
-                 for (size_t j = 0; j < matrix[0].size(); ++j) {
+                 for (size_t j = 0; j < matrix[i].size(); ++j) {
                      cout << matrix[i][j] << " ";
                  }
                  cout << endl;

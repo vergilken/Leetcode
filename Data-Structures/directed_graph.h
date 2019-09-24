@@ -27,6 +27,7 @@ public:
                 SCCUtil(i, disc, low, st, stackMember);
             }
         }
+
         return components;
     }
 
