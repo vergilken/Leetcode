@@ -82,7 +82,7 @@ Another difference we are going to make to finding all low-link values is that i
 
 - After visiting all neighbors, if the current node started a connected component<sup id="a2">[2](#f2)</sup> then pop nodes off stack until current node is reached.
 
-<b id="f1">1. </b> This allows low-link values to propagate throughout cycles. [↩](#a1)
+><b id="f1">1. </b> This allows low-link values to propagate throughout cycles. [↩](#a1)
 <b id="f2">2. </b> A node started a connected compoent if its id equals its low-link value. [↩](#a2)
 
 
