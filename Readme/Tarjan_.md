@@ -10,13 +10,13 @@ What are SCCS
 : **Strongly Connected Components** can be thought of self-connected cycles within a directed graph where every vertex in a given cycle can reach every other vertex in the same cycle.
   
 
-![](../assets/fd126763de1bc63208bac44979efdd8f0.png?0.8583506768657447)  
+![](../assets/fd126763de1bc63208bac44979efdd8f0.png?0.37283804951187416)  
   
 Low-link Values
 : The low-link values of a node is the smallest node id reachable from that node when doing a DFS (including itself).
   
 
-![](../assets/fd126763de1bc63208bac44979efdd8f1.png?0.954797009432369)  
+![](../assets/fd126763de1bc63208bac44979efdd8f1.png?0.05920178539696708)  
   
 Low-link value for each node(start from node 0):
   
@@ -49,7 +49,7 @@ Another difference we are going to make to finding all low-link values is that i
   
 - After visiting all neighbors, if the current node started a connected component<sup id="a2">[2](#f2 )</sup> then pop nodes off stack until current node is reached.
   
-><b id="f1">1. </b> This allows low-link values to propagate throughout cycles. [↩](#a1 )
+<b id="f1">1. </b> This allows low-link values to propagate throughout cycles. [↩](#a1 )
 <b id="f2">2. </b> A node started a connected compoent if its id equals its low-link value. [↩](#a2 )
   
   
