@@ -9,6 +9,7 @@
 
 /** Hash Map memorized search **/
 #include "Problems/Problem1146.h"                 // 1146. Snapshot Array
+#include "Problems/Problem1200.h"                 // 1200. Minimum Absolute Difference
 
 /** BFS **/
 #include "Problems/Problem1162.h"                 // 1162. As Far from Land as Possible
