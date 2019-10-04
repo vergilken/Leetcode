@@ -18,8 +18,8 @@ public:
                 helper(s, i);
                 sort(idxString.begin(), idxString.end());
                 sort(indices.begin(), indices.end());
-                for (int index : indices) {
-                    s[index] = idxString[i];
+                for (size_t j = 0; j < indices.size(); ++j) {
+                    s[indices[j]]=idxString[j];
                 }
             }
         }
