@@ -8,6 +8,7 @@
 #include "Utils/utils.h"
 
 /** Hash Map memorized search **/
+#include "Problems/Problem0715.h"                 // 715. Range Module
 #include "Problems/Problem1146.h"                 // 1146. Snapshot Array
 #include "Problems/Problem1200.h"                 // 1200. Minimum Absolute Difference
 

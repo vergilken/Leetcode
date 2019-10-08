@@ -5,15 +5,15 @@
 #ifndef LEETCODE_PROBLEM1028_H
 #define LEETCODE_PROBLEM1028_H
 
-#include "../Utils/stl_tools.h"
-struct TreeNode {
-    int val;
-    TreeNode *left;
-    TreeNode *right;
-    explicit TreeNode(int x): val(x), left(nullptr), right(nullptr) {}
-};
-
 class RecoverTreeFromPreorderTraversal {
+private:
+    struct TreeNode {
+        int val;
+        TreeNode *left;
+        TreeNode *right;+
+        explicit TreeNode(int x): val(x), left(nullptr), right(nullptr) {}
+    };
+
 public:
     TreeNode* recover_from_preorder(string S) {
         vector<TreeNode*> st;
