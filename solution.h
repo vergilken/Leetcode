@@ -21,7 +21,7 @@
 
 /** Graph Traverse **/
 // Topological Sorting
-#include "Problems/TODO_Problem1203.h"                 // 1203. Sort Items by Groups Respecting Dependencies
+#include "Problems/TODO_Problem1203.h"            // 1203. Sort Items by Groups Respecting Dependencies
 
 // Tarjan Algorithm
 #include "Problems/Problem1192.h"                 // 1192. Critical Connections in a Network
@@ -34,6 +34,7 @@
 #include "Problems/Problem0305.h"                 // 305. Number of Islands II
 
 /** stack **/
+#include "Problems/Problem1028.h"                 // 1028. Recover a Tree From Preorder Traversal
 #include "Problems/Problem1124.h"                  // 1124. Longest Well-Performing Interval
 
 /** 1-dimension Dynamical Programming **/
