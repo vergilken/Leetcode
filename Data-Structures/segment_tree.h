@@ -20,6 +20,7 @@ struct SegmentTreeNode {
 
 class SegmentTree {
 public:
+    explicit SegmentTree() = default;
     SegmentTreeNode* build_tree(int start, int end, vector<int>& values) {
         if (start == end) {
             return new SegmentTreeNode(start, end, values[start], nullptr, nullptr);

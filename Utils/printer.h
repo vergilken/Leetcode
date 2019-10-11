@@ -8,7 +8,7 @@
 #include <utility>
 
 #include "stl_tools.h"
-#include "../Data-Structures/binary_tree.h"
+
 struct Trunk {
     Trunk* prev;
     string str;
