@@ -19,15 +19,15 @@ public:
                     s[i] = '*';
                 }
             }
-
-            while (!st.empty()) {
-                s[st.top()] = '*';
-                st.pop();
-            }
-
-            s.erase(remove(s.begin(), s.end(), "*"), s.end());
-            return s;
         }
+
+        while (!st.empty()) {
+            s[st.top()] = '*';
+            st.pop();
+        }
+
+        s.erase(remove(s.begin(), s.end(), '*'), s.end());
+        return s;
     }
 };
 #endif //LEETCODE_PROBLEM1249_H
