@@ -8,7 +8,7 @@
 class MinimumRemoveToMakeValidParentheses {
 public:
     static string min_remove_to_make_valid(string& s) {
-        stack<char> st;
+        stack<int> st;
         for (size_t i = 0; i < s.size(); ++i) {
             if (s[i] == '(') {
                 st.push(i);
