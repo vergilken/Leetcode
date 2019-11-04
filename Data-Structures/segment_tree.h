@@ -34,35 +34,35 @@ public:
     NumArray(vector<int> nums) {
         nums_.swap(nums);
         if (!nums_.empty()) {
-            root_.reset(buildTree(0, nums_.size() - 1));
+            root_.reset(build_tree(0, nums_.size() - 1));
         }
     }
 
     void update(int i, int val) {
-        updateTree(root_.get(), i, val);
+        update_tree(root_.get(), i, val);
     }
 
     int sumRange(int i, int j) {
-        return sumRange(root_.get(), i, j);
+        return range_sum(root_.get(), i, j);
     }
 
 private:
     vector<int> nums_;
     unique_ptr<SegmentTreeNode> root_;
 
-    SegmentTreeNode* buildTree(int start, int end) {
+    SegmentTreeNode* build_tree(int start, int end) {
         if (start == end) {
             return new SegmentTreeNode(start, end, nums_[start]);
         }
 
         int mid = start + (end - start) / 2;
-        auto left = buildTree(start, mid);
-        auto right = buildTree(mid + 1, end);
+        auto left = build_tree(start, mid);
+        auto right = build_tree(mid + 1, end);
         auto node = new SegmentTreeNode(start, end, left -> sum + right -> sum, left, right);
         return node;
     }
 
-    void updateTree(SegmentTreeNode* root, int i, int val) {
+    static void update_tree(SegmentTreeNode* root, int i, int val) {
         if (root -> start == i && root -> end == i) {
             root -> sum = val;
             return;
@@ -70,26 +70,26 @@ private:
 
         int mid = root -> start + (root -> end - root -> start) / 2;
         if (i <= mid) {
-            updateTree(root -> left, i, val);
+            update_tree(root->left, i, val);
         } else {
-            updateTree(root -> right, i, val);
+            update_tree(root->right, i, val);
         }
 
         root -> sum = root -> left -> sum + root -> right -> sum;
     }
 
-    int sumRange(SegmentTreeNode* root, int i, int j) {
+    static int range_sum(SegmentTreeNode* root, int i, int j) {
         if (i == root -> sum && j == root -> sum) {
             return root -> sum;
         }
 
         int mid = root -> start + (root -> end - root -> start ) / 2;
         if (j < mid) {
-            return sumRange(root -> left, i, j);
+            return range_sum(root->left, i, j);
         } else if (i > mid) {
-            return sumRange(root -> right, i, j);
+            return range_sum(root->right, i, j);
         } else {
-            return sumRange(root -> left, i, mid) + sumRange(root -> right, mid + 1, j);
+            return range_sum(root->left, i, mid) + range_sum(root->right, mid + 1, j);
         }
     }
 };
