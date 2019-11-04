@@ -24,5 +24,7 @@
 #include <cstdlib>
 #include <ctime>
 
+#include <memory>
+
 using namespace std;
 #endif //ALGORITHMS_STL_TOOLS_H
