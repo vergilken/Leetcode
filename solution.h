@@ -28,6 +28,7 @@
 #include "Problems/Problem1192.h"                 // 1192. Critical Connections in a Network
 
 // Backtracking
+#include "Problems/Problem1153.h"                 // 1153. String Transforms Into Another String
 #include "Problems/Problem1088.h"                 // 1088. Confusing Number II
 
 /** Union Find **/
