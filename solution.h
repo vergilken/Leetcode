@@ -10,6 +10,7 @@
 /** Hash Map memorized search **/
 #include "Problems/Problem0715.h"                 // 715. Range Module
 #include "Problems/Problem1146.h"                 // 1146. Snapshot Array
+#include "Problems/Problem1153.h"                 // 1153. String Transforms Into Another String
 #include "Problems/Problem1200.h"                 // 1200. Minimum Absolute Difference
 
 /** BFS **/
@@ -28,7 +29,6 @@
 #include "Problems/Problem1192.h"                 // 1192. Critical Connections in a Network
 
 // Backtracking
-#include "Problems/Problem1153.h"                 // 1153. String Transforms Into Another String
 #include "Problems/Problem1088.h"                 // 1088. Confusing Number II
 
 /** Union Find **/
@@ -37,7 +37,8 @@
 
 /** stack **/
 #include "Problems/Problem1028.h"                 // 1028. Recover a Tree From Preorder Traversal
-#include "Problems/Problem1124.h"                  // 1124. Longest Well-Performing Interval
+#include "Problems/Problem1124.h"                 // 1124. Longest Well-Performing Interval
+#include "Problems/Problem1249.h"                 // 1249. Minimum Remove to Make Valid Parentheses
 
 /** 1-dimension Dynamical Programming **/
 #include "Problems/Problem0304.h"                  // 304. Range Sum Query 2D - Immutable
