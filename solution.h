@@ -13,6 +13,10 @@
 #include "Problems/Problem1153.h"                 // 1153. String Transforms Into Another String
 #include "Problems/Problem1200.h"                 // 1200. Minimum Absolute Difference
 
+/** Two Points and Slide Window **/
+#include "Problems/Problem0992.h"                 // 992. Subarrays with K Different Integers
+#include "Problems/Problem1248.h"                 // 1248. Count Number of Nice Subarrays
+
 /** BFS **/
 #include "Problems/Problem1162.h"                 // 1162. As Far from Land as Possible
 #include "Problems/Problem1197.h"                 // 1197. Minimum Knight Moves
