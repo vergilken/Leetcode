@@ -52,6 +52,9 @@
 /** 2-dimension Dynamical Programming **/
 #include "Problems/Problem1187.h"                  // 1187. Make Array Strictly Increasing
 
+/** Greedy Algorithm **/
+#include "Problems/Problem1127.h"                  // 1247. Minimum Swaps to Make Strings Equal
+
 /** Binary Indexed Tree **/
 #include "Problems/TODO_Problem0218.h"                 // 218. The Skyline Problem
 #include "Problems/Problem0307.h"                 // 307. Range Sum Query - Mutable
