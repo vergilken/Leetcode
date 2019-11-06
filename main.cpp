@@ -2,6 +2,6 @@
 #include "solution.h"
 
 int main() {
-    cout << StringTransformsIntoAnotherString::can_convert("abcc", "abcd") << endl;
+    cout << MinimumSwapsToMakeStringsEqual :: min_swap("xyyyxx", "xxxxyy") << endl;
     return EXIT_SUCCESS;
 }
