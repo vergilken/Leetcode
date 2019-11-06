@@ -34,6 +34,7 @@
 
 // Backtracking
 #include "Problems/Problem1088.h"                 // 1088. Confusing Number II
+#include "Problems/Problem1245.h"                 // 1245. Tree Diameter
 
 /** Union Find **/
 #include "Problems/Problem0200.h"                 // 200. Number of Islands
