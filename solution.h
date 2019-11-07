@@ -16,6 +16,7 @@
 
 /** Two Points and Slide Window **/
 #include "Problems/Problem0992.h"                 // 992. Subarrays with K Different Integers
+#include "Problems/Problem1234.h"                 // 1234. Replace the Substring for Balanced String
 #include "Problems/Problem1248.h"                 // 1248. Count Number of Nice Subarrays
 
 /** BFS **/
