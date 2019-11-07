@@ -16,30 +16,35 @@ public:
 
         int init = edges[0][0];
         reset_distance();
-        int start = helper(mp, init, 0);
+        helper(mp, init, 0);
+        cout << "start point: " <<  endpoint << endl;
+        cout << "distance right now: " << distance << endl;
         reset_distance(); visited.clear();
-        helper(mp, start, 0);
+        helper(mp, endpoint, 0);
         return distance;
     }
 
 private:
-    int helper(unordered_map<int, vector<int>>& mp, int node, int tempDist) {
+    void helper(unordered_map<int, vector<int>>& mp, int node, int tempDist) {
         vector<int> neighbors = mp[node];
         int result = node;
         for (int neighbor : neighbors) {
             if (!visited[neighbor]) {
                 visited[neighbor] = true;
-                result = helper(mp, neighbor, tempDist + 1);
+                if (tempDist + 1 >= distance) {
+                    endpoint = neighbor;
+                }
+                helper(mp, neighbor, tempDist + 1);
             }
         }
         distance = max(distance, tempDist);
-        return result;
     }
 
     void reset_distance() {
         distance = 0;
     }
     int distance;
+    int endpoint;
     unordered_map<int, bool> visited;
 };
 #endif //ALGORITHMS_PROBLEM1245_H
