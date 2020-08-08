@@ -57,6 +57,7 @@
 
 /** Greedy Algorithm **/
 #include "Problems/Problem1247.h"                  // 1247. Minimum Swaps to Make Strings Equal
+#include "Problems/Problem1536.h"                  // 1536. Minimum Swaps to Arrange a Binary Grid
 
 /** Binary Indexed Tree **/
 #include "Problems/TODO_Problem0218.h"                 // 218. The Skyline Problem
