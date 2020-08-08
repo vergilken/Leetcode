@@ -67,6 +67,9 @@
 /** random pick **/
 #include "Problems/Problem1157.h"                  // 1157. Online Majority Element In Subarray
 
+/** iteration **/
+#include "Problems/Problem1538.h"                  // 1538. Guess the Majority in a Hidden Array
+
 #define ALGORITHMS_SOLUTION_H
 
 #endif //ALGORITHMS_SOLUTION_H
