@@ -2,7 +2,12 @@
 #include "solution.h"
 
 int main() {
-    auto arrayReader = new ArrayReader(vector<int>{0,0,0,1,1});
-    cout << GuessMajorityInHiddenArray :: guessMajority(*arrayReader) << endl;
+    vector<vector<int>> temp = {
+            {1, 0, 1},
+            {0, 1, 0},
+            {1, 0, 1}
+    };
+    cout << MinimumSwapsToArrangeBinaryGrid :: minSwaps(temp) << endl;
+
     return EXIT_SUCCESS;
 }

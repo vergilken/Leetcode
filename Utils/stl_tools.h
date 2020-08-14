@@ -23,8 +23,11 @@
 
 #include <cstdlib>
 #include <ctime>
+#include <stdio.h>
 
 #include <memory>
+
+#include <sstream>
 
 using namespace std;
 #endif //ALGORITHMS_STL_TOOLS_H

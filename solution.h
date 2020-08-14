@@ -8,6 +8,7 @@
 #include "Utils/utils.h"
 
 /** Hash Map memorized search **/
+#include "Problems/Problem0609.h"                 // 609. Find Duplicate File in System
 #include "Problems/Problem0715.h"                 // 715. Range Module
 #include "Problems/Problem1146.h"                 // 1146. Snapshot Array
 #include "Problems/Problem1153.h"                 // 1153. String Transforms Into Another String
@@ -57,7 +58,7 @@
 
 /** Greedy Algorithm **/
 #include "Problems/Problem1247.h"                  // 1247. Minimum Swaps to Make Strings Equal
-#include "Problems/Problem1536.h"                  // 1536. Minimum Swaps to Arrange a Binary Grid
+#include "Problems/TODO_Problem1536.h"                  // 1536. Minimum Swaps to Arrange a Binary Grid
 
 /** Binary Indexed Tree **/
 #include "Problems/TODO_Problem0218.h"                 // 218. The Skyline Problem
