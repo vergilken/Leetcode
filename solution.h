@@ -23,6 +23,7 @@
 /** BFS **/
 #include "Problems/Problem1162.h"                 // 1162. As Far from Land as Possible
 #include "Problems/Problem1197.h"                 // 1197. Minimum Knight Moves
+#include "Problems/Problem1293.h"                 // 1293. Shortest Path in a Grid with Obstacles Elimination
 
 /** DFS **/
 // Permutation series
