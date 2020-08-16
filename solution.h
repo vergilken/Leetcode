@@ -71,6 +71,7 @@
 #include "Problems/Problem1157.h"                  // 1157. Online Majority Element In Subarray
 
 /** iteration **/
+#include "Problems/Problem1535.h"                  // 1535. Find the Winner of an Array Game
 #include "Problems/Problem1538.h"                  // 1538. Guess the Majority in a Hidden Array
 
 #define ALGORITHMS_SOLUTION_H

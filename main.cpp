@@ -2,12 +2,9 @@
 #include "solution.h"
 
 int main() {
-    vector<vector<int>> temp = {
-            {1, 0, 1},
-            {0, 1, 0},
-            {1, 0, 1}
-    };
-    cout << MinimumSwapsToArrangeBinaryGrid :: minSwaps(temp) << endl;
+    vector<int> result = {1, 2, 3, 4, 5, 6};
+    int k = 1;
+    cout << FindWinnerOfArrayGame :: getWinner(result, k) <<endl;
 
     return EXIT_SUCCESS;
 }
