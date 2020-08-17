@@ -14,6 +14,7 @@
 #include "Problems/Problem1153.h"                 // 1153. String Transforms Into Another String
 #include "Problems/Problem1200.h"                 // 1200. Minimum Absolute Difference
 #include "Problems/Problem1244.h"                 // 1244. Design A Leaderboard
+#include "Problems/Problem1539.h"                 // 1539. Kth Missing Positive Number
 
 /** Two Points and Slide Window **/
 #include "Problems/Problem0992.h"                 // 992. Subarrays with K Different Integers
