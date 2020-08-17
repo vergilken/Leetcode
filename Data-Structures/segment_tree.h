@@ -1,5 +1,5 @@
 //
-// Created by ApolloBoxMacbookPro2 on 10/10/19.
+// Created by Vergilken on 10/10/19.
 //
 
 #ifndef LEETCODE_SEGMENT_TREE_H
