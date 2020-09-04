@@ -76,6 +76,16 @@
 #include "Problems/Problem1535.h"                  // 1535. Find the Winner of an Array Game
 #include "Problems/Problem1538.h"                  // 1538. Guess the Majority in a Hidden Array
 
+/** slide window **/
+#include "Problems/Problem0239.h"                  // 239. Sliding Window Maximum
+
+/** binary tree **/
+#include "Problems/Problem0124.h"                  // 124. Binary Tree Maximum Path Sum
+#include "Problems/Problem2000.h"                  // exp: construct binary tree via string
+
+/** linked list **/
+#include "Problems/Problem0142.h"                  // 142. Linked List Cycle II
+
 #define ALGORITHMS_SOLUTION_H
 
 #endif //ALGORITHMS_SOLUTION_H

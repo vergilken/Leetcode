@@ -5,10 +5,6 @@
 #ifndef ALGORITHMS_PRINTER_H
 #define ALGORITHMS_PRINTER_H
 
-#include <utility>
-
-#include "stl_tools.h"
-
 struct Trunk {
     Trunk* prev;
     string str;
