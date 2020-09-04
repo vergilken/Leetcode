@@ -85,6 +85,7 @@
 
 /** linked list **/
 #include "Problems/Problem0142.h"                  // 142. Linked List Cycle II
+#include "Problems/Problem1265.h"                  // 1265. Print Immutable Linked List in Reverse
 
 #define ALGORITHMS_SOLUTION_H
 
