@@ -26,7 +26,7 @@ public:
         slow -> next = slow -> next -> next;
         delete temp;
 
-        return head;
+        return dummy -> next;
     }
 };
 #endif //LEETCODE_PROBLEM0019_H
