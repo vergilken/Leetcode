@@ -6,7 +6,7 @@
 #define LEETCODE_PROBLEM0092_H
 class ReverseLinkedList2 {
 public:
-    ForwardLinkedListNode<int>* reverse_linked_list_between(ForwardLinkedListNode<int>* head, int left, int right) {
+    static ForwardLinkedListNode<int>* reverse_linked_list_between(ForwardLinkedListNode<int>* head, int left, int right) {
         if (left == right) {
             return head;
         }
