@@ -11,12 +11,12 @@ public:
         auto dummy = new ForwardLinkedListNode<int>(-1);
         dummy -> next = head;
 
-        auto fast = head;
+        auto fast = dummy;
         for (int i = 0; i < n; ++i) {
             fast = fast -> next;
         }
 
-        auto slow = head;
+        auto slow = dummy;
         while (fast -> next != nullptr) {
             fast = fast -> next;
             slow = slow -> next;
