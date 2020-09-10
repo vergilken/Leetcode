@@ -88,7 +88,9 @@
 #include "Problems/Problem0092.h"                  // 62. Reverse Linked List II
 #include "Problems/Problem0142.h"                  // 142. Linked List Cycle II
 #include "Problems/Problem0206.h"                  // 206. Reverse Linked List
+#include "Problems/Problem1171.h"                  // 1171. Remove Zero Sum Consecutive Nodes from Linked List
 #include "Problems/Problem1265.h"                  // 1265. Print Immutable Linked List in Reverse
+#include "Problems/Problem1474.h"                  // 1474. Delete N Nodes After M Nodes of a Linked List
 
 #define ALGORITHMS_SOLUTION_H
 
