@@ -45,13 +45,23 @@ public:
         } else {
             for (auto c: vec) {
                 cout << c << " ";
-            } cout << endl;
+            }
+            cout << endl;
         }
     }
 
     // print binary tree
     static void print_binary_tree(Node<T>* root) {
         print_tree_helper(root, nullptr, false);
+    }
+
+    // print forward linked list
+    static void print_forward_linked_list(ForwardLinkedListNode<T>* head) {
+        while (head != nullptr) {
+            cout << head->value << " ";
+            head = head->next;
+        }
+        cout << endl;
     }
 
 private:
