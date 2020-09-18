@@ -5,8 +5,8 @@
 #include "solution.h"
 
 int main() {
-    vector<int>vec = {1, 2, 3, -6, 6, -6, 1, -1, 2};
+    vector<int>vec = {1,2,-3,3,1};
     auto head = ForwardLinkedListNode<int> :: generate_forward_list(vec);
-    RemZeroSumConsecutiveNodesFromLinkedList :: remZeroSumConsSubList(head);
+    Printer<int> :: print_forward_linked_list(RemZeroSumConsecutiveNodesFromLinkedList :: remZeroSumConsSubList(head));
     return EXIT_SUCCESS;
 }

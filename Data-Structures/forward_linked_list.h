@@ -21,7 +21,9 @@ public:
             idx -> next = tmp;
             idx = tmp;
         }
-        return head;
+        auto tmp = head -> next;
+        delete head;
+        return tmp;
     }
 };
 #endif //LEETCODE_FORWARD_LINKED_LIST_H
