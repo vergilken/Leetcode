@@ -8,6 +8,7 @@
 #include <utility>
 #include <iostream>
 #include <climits>
+#include <numeric>
 #include <algorithm>
 
 #include <array>

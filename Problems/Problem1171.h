@@ -8,42 +8,43 @@ class RemZeroSumConsecutiveNodesFromLinkedList {
 public:
     static ForwardLinkedListNode<int>* remZeroSumConsSubList(ForwardLinkedListNode<int>* head) {
         vector<int> records;
-        vector<int> sum;
-        vector<bool> mark;
         while (head != nullptr) {
             records.push_back(head -> value);
-            sum.push_back(head -> value + (sum.empty() ? 0 : sum.back()));
-            mark.push_back(false);
             auto tmp = head;
             head = head -> next;
             delete tmp;
         }
 
-        size_t right = 0;
+        size_t left, right = 0;
         while (right < records.size()) {
-            size_t left = 0;
+            auto sum2right = accumulate(records.begin(), records.begin() + right + 1, 0);
+            left = 0;
             while (left <= right) {
-                auto tmp = sum[right] - sum[left] + records[left];
+                auto sum2left = accumulate(records.begin(), records.begin() + left + 1, 0);
+                auto tmp = sum2right - sum2left + records[left];
                 if (tmp == 0) {
-                    for (auto idx = left; idx <= right; ++idx) {
-                        mark[idx] = true;
-                    }
-                    ++right; break;
+                    records.erase(records.begin() + left, records.begin() + right + 1);
+                    right = 0;
+                    break;
+                } else {
+                    ++left;
                 }
-                ++left;
             }
             ++right;
         }
+
         auto dummy = new ForwardLinkedListNode<int>(-1);
-        auto result = dummy;
-        for (auto idx = 0; idx < mark.size(); ++idx) {
-            if (!mark[idx]) {
-                auto tmp = new ForwardLinkedListNode<int>(records[idx]);
-                dummy -> next = tmp;
+        head  = dummy;
+        for(int record : records) {
+            if (record != 0) {
+                auto tmp = new ForwardLinkedListNode<int>(record);
+                dummy -> next  = tmp;
                 dummy = dummy -> next;
             }
+
         }
-        return result -> next;
+
+        return head -> next;
     }
 };
 #endif //LEETCODE_PROBLEM1171_H
