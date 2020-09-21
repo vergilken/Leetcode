@@ -7,6 +7,38 @@
 class RemZeroSumConsecutiveNodesFromLinkedList {
 public:
     static ForwardLinkedListNode<int>* remZeroSumConsSubList(ForwardLinkedListNode<int>* head) {
+        vector<int> records = {0};
+        vector<int> preSum = {0};
+        while (head != nullptr) {
+            records.push_back(head -> value);
+            preSum.push_back(head -> value + preSum.back());
+            auto tmp = head;
+            head = head -> next;
+            delete tmp;
+        }
+        auto _head = new ForwardLinkedListNode<int>(-1);
+        auto dummy = _head;
+
+        int i = 0;
+        while (i < records.size()) {
+            for (int j = int(records.size()) - 1; j >= i; --j) {
+                if (i == j) {
+                    auto tmp = new ForwardLinkedListNode<int>(records[i]);
+                    _head -> next = tmp;
+                    _head = _head -> next;
+                    ++i;
+                } else if (preSum[i] == preSum[j]) {
+                    auto tmp = new ForwardLinkedListNode<int>(records[i]);
+                    _head -> next = tmp;
+                    _head = _head -> next;
+                    i = j + 1;
+                }
+            }
+        }
+        return dummy -> next -> next;
+    }
+
+    static ForwardLinkedListNode<int>* remZeroSumConsSubListBruteForce(ForwardLinkedListNode<int>* head) {
         vector<int> records;
         while (head != nullptr) {
             records.push_back(head -> value);
