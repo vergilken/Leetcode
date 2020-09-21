@@ -47,6 +47,7 @@
 
 /** stack **/
 #include "Problems/Problem1028.h"                 // 1028. Recover a Tree From Preorder Traversal
+#include "Problems/Problem1091.h"                 // 1019. Next Greater Node In Linked List
 #include "Problems/Problem1124.h"                 // 1124. Longest Well-Performing Interval
 #include "Problems/Problem1249.h"                 // 1249. Minimum Remove to Make Valid Parentheses
 
