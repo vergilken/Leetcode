@@ -82,6 +82,7 @@
 
 /** binary tree **/
 #include "Problems/Problem0124.h"                  // 124. Binary Tree Maximum Path Sum
+#include "Problems/Problem1367.h"                  // 1367. Linked List in Binary Tree
 #include "Problems/Problem2000.h"                  // exp: construct binary tree via string
 
 /** linked list **/
