@@ -30,6 +30,10 @@
 // Permutation series
 #include "Problems/Problem0046.h"                 // 46. Permutations
 
+// Backtracking
+#include "Problems/Problem1088.h"                 // 1088. Confusing Number II
+#include "Problems/Problem1245.h"                 // 1245. Tree Diameter
+
 /** Graph Traverse **/
 // Topological Sorting
 #include "Problems/TODO_Problem1203.h"            // 1203. Sort Items by Groups Respecting Dependencies
@@ -37,9 +41,9 @@
 // Tarjan Algorithm
 #include "Problems/Problem1192.h"                 // 1192. Critical Connections in a Network
 
-// Backtracking
-#include "Problems/Problem1088.h"                 // 1088. Confusing Number II
-#include "Problems/Problem1245.h"                 // 1245. Tree Diameter
+/** Binary Search **/
+#include "Problems/Problem0033.h"                 // 33. Search in Rotated Sorted Array
+#include "Problems/Problem0081.h"                 // 81. Search in Rotated Sorted Array II
 
 /** Union Find **/
 #include "Problems/Problem0200.h"                 // 200. Number of Islands
