@@ -64,6 +64,17 @@ public:
         cout << endl;
     }
 
+    static void print_stack(stack<T>& st) {
+        vector<T> tmp;
+        while(!st.empty()) {
+           tmp.push_back(st.top());
+           st.pop();
+        }
+        reverse(tmp.begin(), tmp.end());
+        cout << "|| ";
+        print_vector(tmp);
+    }
+
 private:
     // print binary tree branches of binary tree
     static void show_trunks(Trunk *p) {

@@ -5,13 +5,9 @@
 #include "solution.h"
 
 int main() {
-    vector<int>vec = {6, 1, 2, -1, 10, -2, 1, 4, -3,1, -5 , 6};
+    vector<int>vec = {1,7,5,1,9,2,5,1};
     auto tmp = ForwardLinkedListNode<int> :: generate_forward_list(vec);
-    Printer<int> :: print_forward_linked_list(RemZeroSumConsecutiveNodesFromLinkedList :: remZeroSumConsSubList(tmp));
-
-    vec = {0};
-    tmp = ForwardLinkedListNode<int> :: generate_forward_list(vec);
-    Printer<int> :: print_forward_linked_list(RemZeroSumConsecutiveNodesFromLinkedList :: remZeroSumConsSubList(tmp));
+    NextGreaterNodeInLinkedList :: next_larger_nodes(tmp);
 
     return EXIT_SUCCESS;
 }
