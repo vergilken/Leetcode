@@ -11,17 +11,18 @@ public:
         vector<int> result;
         int idx = 0;
         while (head != nullptr) {
-            cout << head -> value << " ";
-            if (tmp.empty() || tmp.top() > head -> value) {
+            result.push_back(0);
+            if (tmp.empty() || tmp.top() >= head -> value) {
+                tmp.push(head -> value); indexes.push(idx);
+            } else {
+                while (!tmp.empty() && tmp.top() < head -> value) {
+                    result[indexes.top()] = head -> value;
+                    tmp.pop(); indexes.pop();
+                }
                 tmp.push(head -> value); indexes.push(idx);
             }
-            result.push_back(head -> value);
             head = head -> next; ++idx;
         }
-
-
-
-        Printer<int> :: print_stack(tmp);
         return result;
     }
 };

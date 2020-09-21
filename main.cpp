@@ -5,7 +5,7 @@
 #include "solution.h"
 
 int main() {
-    vector<int>vec = {1,7,5,1,9,2,5,1};
+    vector<int>vec = {2};
     auto tmp = ForwardLinkedListNode<int> :: generate_forward_list(vec);
     NextGreaterNodeInLinkedList :: next_larger_nodes(tmp);
 
