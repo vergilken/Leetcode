@@ -51,7 +51,7 @@ public:
     }
 
     // print binary tree
-    static void print_binary_tree(Node<T>* root) {
+    static void print_binary_tree(TreeNode<T>* root) {
         print_tree_helper(root, nullptr, false);
     }
 
@@ -85,7 +85,7 @@ private:
     }
 
     // use in-order traversal to print binary tree
-    static void print_tree_helper(Node<T>* root, Trunk *prev, bool isLeft) {
+    static void print_tree_helper(TreeNode<T>* root, Trunk *prev, bool isLeft) {
         if (root == nullptr) return;
         string prev_str = "    ";
         auto *trunk = new Trunk(prev, prev_str);

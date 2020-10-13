@@ -7,7 +7,7 @@
 
 class LinkedListInBinaryTree {
 public:
-    static bool is_sub_path(ForwardLinkedListNode<int>* head, Node<int>* root) {
+    static bool is_sub_path(ForwardLinkedListNode<int>* head, TreeNode<int>* root) {
         if (!root) return false;
         if (check_path(head, root)) return true;
         bool left = is_sub_path(head, root -> left);
@@ -15,7 +15,7 @@ public:
         return left or right;
     }
 private:
-    static bool check_path(ForwardLinkedListNode<int>* head, Node<int>* root) {
+    static bool check_path(ForwardLinkedListNode<int>* head, TreeNode<int>* root) {
         if (!head) {
             return true;
         } else if (!root && head) {

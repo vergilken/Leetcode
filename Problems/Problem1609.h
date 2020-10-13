@@ -7,8 +7,8 @@
 
 class EvenOddTree {
 public:
-    static bool is_even_odd_tree (Node<int>* root) {
-        queue<Node<int>*> q;
+    static bool is_even_odd_tree (TreeNode<int>* root) {
+        queue<TreeNode<int>*> q;
         q.push(root);
         int level = -1;
         while (!q.empty()) {
@@ -30,7 +30,6 @@ public:
             }
         }
         return true;
-    }
     }
 };
 #endif //LEETCODE_PROBLEM1609_H

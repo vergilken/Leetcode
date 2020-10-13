@@ -6,14 +6,14 @@
 #define LEETCODE_PROBLEM0124_H
 class BinaryTreeMaximumPathSum {
 public:
-    static int maxPathSum(Node<int>* root) {
+    static int maxPathSum(TreeNode<int>* root) {
         int result = INT_MIN;
         helper(root, result);
         return result;
     }
 
 private:
-    static int helper(Node<int>* root, int& result) {
+    static int helper(TreeNode<int>* root, int& result) {
         if (root == nullptr) {
             return INT_MIN;
         }

@@ -5,14 +5,14 @@
 #ifndef LEETCODE_BINARY_TREE_H
 #define LEETCODE_BINARY_TREE_H
 template <typename T>
-struct Node{
+struct TreeNode{
     T value;
-    Node* right;
-    explicit Node(T _value) {
+    TreeNode* right;
+    explicit TreeNode(T _value) {
         value = _value;
         left = right = nullptr;
     }
 
-    Node* left;
+    TreeNode* left;
 };
 #endif //LEETCODE_BINARY_TREE_H

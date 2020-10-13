@@ -6,7 +6,7 @@
 #define LEETCODE_PROBLEM2000_H
 class ConstructBinaryTreeViaString {
 public:
-    static Node<int>* construct_binary_tree_via_string(string& str) {
+    static TreeNode<int>* construct_binary_tree_via_string(string& str) {
         if (str.empty()) {
             return nullptr;
         }
@@ -15,16 +15,16 @@ public:
     }
 
 private:
-    static Node<int>* helper(string& str, size_t& i) {
-        Node<int>* root = nullptr;
+    static TreeNode<int>* helper(string& str, size_t& i) {
+        TreeNode<int>* root = nullptr;
         if (i >= str.size()) {
             return root;
         }
 
         if (str[i] == 'L') {
-            return new Node<int>(0);
+            return new TreeNode<int>(0);
         } else {
-            root = new Node<int>(1);
+            root = new TreeNode<int>(1);
             if (root -> left == nullptr) {
                 root -> left = helper(str, ++i);
             }
