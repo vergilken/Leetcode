@@ -50,6 +50,7 @@
 #include "Problems/Problem0305.h"                 // 305. Number of Islands II
 
 /** stack **/
+#include "Problems/Problem0224.h"                 // 224. Basic Calculator
 #include "Problems/Problem1028.h"                 // 1028. Recover a Tree From Preorder Traversal
 #include "Problems/Problem1091.h"                 // 1019. Next Greater Node In Linked List
 #include "Problems/Problem1124.h"                 // 1124. Longest Well-Performing Interval
@@ -90,7 +91,6 @@
 #include "Problems/Problem1609.h"                  // 1609. Even Odd Tree
 #include "Problems/Problem1612.h"                  // 1612. Check If Two Expression Trees are Equivalent
 #include "Problems/Problem2000.h"                  // exp: construct binary tree via string
-
 
 /** linked list **/
 #include "Problems/Problem0019.h"                  // 19. Remove Nth Node From End of List
