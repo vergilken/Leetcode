@@ -9,8 +9,8 @@ class CheckTwoExpressionTressEquivalent {
 public:
     static bool checkEquivalence(TreeNode<char>* root) {
         vector<int> record(26, 0);
-        update_map(root1, record, 1);
-        update_map(root2, record, -1);
+        update_map(root, record, 1);
+        update_map(root, record, -1);
         int i = 0;
         for (auto num: record) {
             if (num != 0) {

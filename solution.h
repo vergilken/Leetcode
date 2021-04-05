@@ -90,6 +90,7 @@
 #include "Problems/Problem1367.h"                  // 1367. Linked List in Binary Tree
 #include "Problems/Problem1609.h"                  // 1609. Even Odd Tree
 #include "Problems/Problem1612.h"                  // 1612. Check If Two Expression Trees are Equivalent
+#include "Problems/Problem1740.h"                  // 1740. Find Distance in a Binary Tree
 #include "Problems/Problem2000.h"                  // exp: construct binary tree via string
 
 /** linked list **/
