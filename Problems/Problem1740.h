@@ -41,7 +41,7 @@ private:
             cout << "val: " << val << " distance: " << distance << endl;
             return distance;
         } else {
-            return findDistanceFromRootToVal(root -> left, val, distance + 1) || findDistanceFromRootToVal(root -> right, val, distance + 1);
+            return max(findDistanceFromRootToVal(root -> left, val, distance + 1), findDistanceFromRootToVal(root -> right, val, distance + 1));
         }
     }
 };
